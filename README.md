@@ -1,5 +1,12 @@
 # Auto Insurance Agent
 
+## Prompt
+
+### "Build an agent for auto insurance where people looking for best insurance and deals which can save hours of time and phone calls, can we do with react and typescript"
+
+<img width="1440" height="755" alt="image" src="https://github.com/user-attachments/assets/a847ed92-9173-4cc3-9aa4-6f12c1e2f5ae" />
+
+
 A modern React + TypeScript application that helps users find the best auto insurance deals quickly and efficiently. This intelligent agent saves users hours of time and phone calls by comparing quotes from multiple insurance providers in minutes.
 
 ## Features
