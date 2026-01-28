@@ -55,13 +55,19 @@ const QuoteForm: React.FC<QuoteFormProps> = ({ onSubmit, isLoading }) => {
     });
   };
 
-  const nextStep = () => {
-    if (step < 3) setStep(step + 1);
-  };
+const nextStep = () => {
+  setStep(prev => {
+    if (prev < 3) return (prev + 1) as 1 | 2 | 3;
+    return prev;
+  });
+};
 
-  const prevStep = () => {
-    if (step > 1) setStep(step - 1);
-  };
+const prevStep = () => {
+  setStep(prev => {
+    if (prev > 1) return (prev - 1) as 1 | 2 | 3;
+    return prev;
+  });
+};
 
   return (
     <div className="bg-white rounded-2xl shadow-xl p-8 max-w-4xl mx-auto">
